@@ -4,7 +4,7 @@ Simple python module for communicating with Mailgun API.
 ## How to install
 
 ```
-pip install -e git+https://github.com/grafa/pygun#egg=pygun
+pip install pygun
 ```
 
 ## Usage
