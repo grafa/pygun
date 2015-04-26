@@ -26,4 +26,5 @@ print response
 ```
 
 ## Roadmap
-* Add HTML support
+* Add multiple recipients ("to" parameter as array)
+* ~~Add HTML support~~

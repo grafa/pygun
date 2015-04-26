@@ -39,17 +39,26 @@ class PyGun(object):
 
         self._text = text
 
+    def html(self, html):
+
+        self._html
+
     def send(self):
+
+        data = {
+            "from": self._sender,
+            "to": self._to,
+            "subject": self._subject,
+            "text": self._text
+        }
+
+        if hasattr(self, "_html"):
+            data["html"] = self._html
 
         r = requests.post(
             "https://api.mailgun.net/v3/{}/messages".format(self._domain),
             auth=("api", self._api_key),
-            data={
-                "from": self._sender,
-                "to": self._to,
-                "subject": self._subject,
-                "text": self._text
-            }
+            data=data
         )
 
         return json.loads(r.text)
