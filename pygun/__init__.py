@@ -41,7 +41,7 @@ class PyGun(object):
 
     def html(self, html):
 
-        self._html
+        self._html = html
 
     def send(self):
 
