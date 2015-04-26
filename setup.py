@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name="pygun",
-    version="0.1.1",
+    version="0.2",
     description="Simple python module for communicating with Mailgun API.",
     license="New BSD License",
     author="Pavel Hrdina",
