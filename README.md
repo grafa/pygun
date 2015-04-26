@@ -12,7 +12,7 @@ Module aims for simple usage. We don't want complicated API's for Python modules
 
 ```python
 m = PyGun("your api key", "your mailbox url")
-m.sender("my@mail.com", "My Sandbox")   #We cannot use "from" since it's python keyword :(
+m.sender("my@mail.com", "My Sandbox")   # We cannot use "from" since it's python keyword :(
 m.to("recipient@mail.com", "John Doe")
 m.subject("My first email")
 m.text("Hi there! Check this great API for sending email messages.")

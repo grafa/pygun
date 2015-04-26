@@ -23,7 +23,7 @@ class PyGun(object):
         else:
             self._sender = sender_mail
 
-    def to(self, to_mail, to_name):
+    def to(self, to_mail, to_name=None):
 
         if to_name:
             self._to = "{} <{}>".format(to_name, to_mail)
