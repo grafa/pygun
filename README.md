@@ -1,16 +1,22 @@
 # PyGun
 Simple python module for communicating with Mailgun API.
 
+## How to install
+
+```
+pip install -e git+https://github.com/grafa/pygun#egg=pygun
+```
+
 ## Usage
 Module aims for simple usage. We don't want complicated API's for Python modules since Python is so simple and still powerful.
 
 ```python
-m = PyGun("your api key", "your mailbox url")                                             
-m.sender("my@mail.com", "My Sandbox")                                      
-m.to("recipient@mail.com", "John Doe")   
+m = PyGun("your api key", "your mailbox url")
+m.sender("my@mail.com", "My Sandbox")
+m.to("recipient@mail.com", "John Doe")
 m.subject("My first email")
 m.text("Hi there! Check this great API for sending email messages.")
-response = m.send()    
+response = m.send()
 ```
 
 And you get pythojn dict response just like from Mailgun API:
