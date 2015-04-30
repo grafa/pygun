@@ -16,6 +16,7 @@ m.sender("my@mail.com", "My Sandbox")   # We cannot use "from" since it's python
 m.to("recipient@mail.com", "John Doe")
 m.subject("My first email")
 m.text("Hi there! Check this great API for sending email messages.")
+m.html("<p>Hi there! Check this great <strong>API</strong> for sending email messages.</p>")
 response = m.send()
 ```
 
